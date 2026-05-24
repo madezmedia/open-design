@@ -35,6 +35,10 @@ const AGENT_INSTALL_LINKS: Record<
     installUrl: 'https://cursor.com/docs/cli/overview',
     docsUrl: 'https://docs.cursor.com/en/cli/overview',
   },
+  'design-agency': {
+    installUrl: 'https://github.com/madezmedia/hermes-cli',
+    docsUrl: 'https://github.com/michaelshaw/open-design/docs/design-agency-integration.md',
+  },
   qwen: {
     installUrl: 'https://github.com/QwenLM/qwen-code',
     docsUrl: 'https://qwenlm.github.io/qwen-code-docs/en/index',

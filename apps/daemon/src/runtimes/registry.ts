@@ -1,5 +1,6 @@
 import { claudeAgentDef } from './defs/claude.js';
 import { codexAgentDef } from './defs/codex.js';
+import { designAgencyAgentDef } from './defs/design-agency.js';
 import { devinAgentDef } from './defs/devin.js';
 import { geminiAgentDef } from './defs/gemini.js';
 import { opencodeAgentDef } from './defs/opencode.js';
@@ -19,6 +20,7 @@ import type { RuntimeAgentDef } from './types.js';
 export const AGENT_DEFS: RuntimeAgentDef[] = [
   claudeAgentDef,
   codexAgentDef,
+  designAgencyAgentDef,
   devinAgentDef,
   geminiAgentDef,
   opencodeAgentDef,

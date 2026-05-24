@@ -1026,6 +1026,36 @@ export const MCP_TEMPLATES: McpTemplate[] = [
     args: ['-y', '@modelcontextprotocol/server-fetch'],
   },
   {
+    id: 'acmi',
+    label: 'ACMI (acmi-mcp)',
+    description:
+      'ACMI timeline + entity memory as an MCP server (backed by Upstash Redis). Lets agents read/write profiles, signals, and timeline events through MCP. Set your Upstash credentials and connect after saving.',
+    transport: 'stdio',
+    category: 'utilities',
+    homepage: 'https://github.com/madezmedia/acmi',
+    example:
+      'List agent ids in the agent namespace, then append a timeline event with your requested summary.',
+    command: 'npx',
+    args: ['-y', '@madezmedia/acmi-mcp'],
+    envFields: [
+      {
+        key: 'UPSTASH_REDIS_REST_URL',
+        label: 'Upstash Redis REST URL',
+        required: true,
+        placeholder: 'https://<id>.upstash.io',
+        secret: true,
+      },
+      {
+        key: 'UPSTASH_REDIS_REST_TOKEN',
+        label: 'Upstash Redis REST Token',
+        required: true,
+        placeholder: '<your-token>',
+        secret: true,
+      },
+    ],
+  },
+
+  {
     id: 'a11y',
     label: 'A11y (Web accessibility / WCAG)',
     description:

@@ -24,6 +24,8 @@
     "typecheck": "pnpm -r --workspace-concurrency=1 --if-present run typecheck && tsc -p scripts/tsconfig.json --noEmit"
   },
   "devDependencies": {
+    "@madezmedia/acmi": "^1.2.0",
+    "@upstash/redis": "^1.30.0",
     "@open-design/tools-dev": "workspace:*",
     "@open-design/tools-pack": "workspace:*",
     "@open-design/tools-pr": "workspace:*",
