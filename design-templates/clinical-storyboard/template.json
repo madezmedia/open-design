@@ -1,0 +1,51 @@
+{
+  "slug": "clinical-storyboard",
+  "name": "Clinical Storyboard",
+  "tagline": "Neurodiversity-affirming social storyboards and visual cards with natural bone paper surfaces, deep ink-blue typography, and warm signal-coral accents.",
+  "mood": [
+    "tactile",
+    "considered",
+    "clinical",
+    "editorial"
+  ],
+  "occasion": [
+    "safety social storyboards",
+    "functional communication visual cards",
+    "special ed school schedules",
+    "RBT and behavior analyst therapy guides",
+    "neurodiversity parenting decks"
+  ],
+  "tone": [
+    "warm",
+    "clinical",
+    "affirming",
+    "restrained"
+  ],
+  "formality": "high",
+  "density": "medium",
+  "palette": {
+    "bg": "#FBFAF5",
+    "bg_alt": "#FAF9F5",
+    "fg": "#0D1B2A",
+    "accent_coral": "#A54B40",
+    "accent_green": "#2D4A3E",
+    "border": "#E5E3D7",
+    "description": "Natural bone paper backdrop (#FBFAF5) with deep ink-blue typography (#0D1B2A), signaled by warm safety coral (#A54B40) and calm clinical green (#2D4A3E)."
+  },
+  "typography": {
+    "display": "Montserrat",
+    "body": "Raleway",
+    "serif": "Source Serif 4",
+    "mono": "JetBrains Mono",
+    "style": "Technical Montserrat display labels + warm Raleway text + Source Serif 4 italic narrative blocks + monospaced coordinate tags."
+  },
+  "variables": {
+    "deckTitle": "Staying With My Group",
+    "storyId": "s1",
+    "audience": "Ages 4-10",
+    "narrative": "I stay with my group so we can have fun together. When I hear my teacher's voice, I stop and look.",
+    "panelIndex": 1,
+    "totalPanels": 8,
+    "coordinates": "42.10 // -71.02"
+  }
+}

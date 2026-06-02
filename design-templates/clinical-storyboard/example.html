@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clinical Storyboard Maker — Open Design</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Load Anime.js v4 Beta via CDN for simple browser static context -->
+  <script src="https://cdn.jsdelivr.net/npm/animejs@4.0.0-beta.0/lib/anime.min.js"></script>
+</head>
+<body>
+
+  <div class="shell">
+    <div class="story-container">
+      
+      <!-- Primary Editorial Header -->
+      <header style="margin-bottom: 30px; display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1px solid var(--line); padding-bottom: 15px;">
+        <div>
+          <span class="tag">OPEN DESIGN // EDUCATION_SERIES</span>
+          <h1 style="font-family: var(--sans); font-size: 26px; font-weight: 600; tracking-tight; margin-top: 6px; color: var(--ink);">
+            clinical-storyboard <span style="font-family: var(--serif); font-style: italic; font-weight: normal; color: var(--coral);">Maker</span>
+          </h1>
+        </div>
+        <div style="text-align: right; font-family: var(--mono); font-size: 9px; color: var(--ink-mute);">
+          SPECIFICATION: v2.0-clinical · ORG: SHAW_SUPPLY
+        </div>
+      </header>
+
+      <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 32px; align-items: start;">
+        
+        <!-- Tactical Story Card Preview -->
+        <main class="story-card reveal-element">
+          <!-- Intersect marks (+) -->
+          <div class="intersect tl">+</div>
+          <div class="intersect tr">+</div>
+          <div class="intersect bl">+</div>
+          <div class="intersect br">+</div>
+
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid var(--line); padding-bottom: 12px; margin-bottom: 16px;">
+            <div>
+              <span id="deck-label" class="tag coral">ST-01 // PROXIMITY</span>
+              <h2 id="deck-title" style="font-family: var(--sans); font-weight: 500; font-size: 22px; margin-top: 4px; color: var(--ink);">Staying With My Group</h2>
+            </div>
+            <div style="text-align: right; font-family: var(--mono); font-size: 10px; color: var(--coral); font-weight: bold;">
+              PANEL <span id="panel-index">01</span> // <span id="total-panels">08</span>
+            </div>
+          </div>
+
+          <!-- Illustration & Caption Deck -->
+          <div class="illustration-frame">
+            <div class="illustration-box">
+              <!-- Visual symbol mockup representing Organic Hand-drawn illustration style -->
+              <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+                <span id="story-emoji" style="font-size: 52px; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.05));">👥</span>
+                <span style="font-family: var(--sans); font-size: 8px; font-weight: bold; letter-spacing: 0.1em; color: var(--green);">FAL_RECRAFT_VECTOR_ACTIVE</span>
+              </div>
+              <div class="coordinate-stamp" id="coordinates-stamp">COORDINATES: [42.10 // -71.02]</div>
+            </div>
+
+            <div class="narrative-box">
+              <span style="font-size: 7px; font-family: var(--mono); font-weight: bold; color: var(--coral); display: block; margin-bottom: 4px; letter-spacing: 0.15em;">CLINICAL NARRATIVE SPEECH</span>
+              <p class="narrative-text" id="narrative-display">
+                &ldquo;I stay with my group so we can have fun together. When I hear my teacher&apos;s voice, I stop and look.&rdquo;
+              </p>
+            </div>
+          </div>
+
+          <!-- PECS Visual replacement mand cards -->
+          <div class="aac-grid">
+            <div class="aac-card" onclick="alert('Mand: Visual BREAK Card triggered.')">✋ Request Space</div>
+            <div class="aac-card" onclick="alert('Mand: HELP Proximity Card triggered.')">🤝 Safe Group Walk</div>
+          </div>
+        </main>
+
+        <!-- Right Side: Real-Time Customization Sandbox -->
+        <aside style="background: var(--paper-alt); border: 1px solid var(--line); padding: 24px; border-radius: 4px; display: flex; flex-direction: column; gap: 20px;">
+          <div>
+            <h3 style="font-family: var(--sans); font-size: 14px; font-weight: 600; color: var(--ink); text-transform: uppercase; tracking-wider; margin-bottom: 6px;">Therapist Sandbox</h3>
+            <p style="font-size: 11px; color: var(--ink-mute); line-height: 1.5;">Customize story elements in real-time to check responsive editorial spacing and tactile flow before compile.</p>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 12px; font-size: 11px;">
+            <div style="display: flex; flex-direction: column; gap: 4px;">
+              <label style="font-family: var(--mono); font-size: 8px; font-weight: bold; color: var(--green); text-transform: uppercase;">1. Social Lesson Title</label>
+              <input type="text" id="input-title" value="Staying With My Group" style="width: 100%; padding: 8px; border: 1px solid var(--line); border-radius: 4px; background: white; font-family: var(--body); font-weight: 500; font-size: 11px; min-height: 36px; outline: none; focus: border-color: var(--green);">
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 4px;">
+              <label style="font-family: var(--mono); font-size: 8px; font-weight: bold; color: var(--green); text-transform: uppercase;">2. Behavior-Analytic Narrative</label>
+              <textarea id="input-narrative" rows="3" style="width: 100%; padding: 8px; border: 1px solid var(--line); border-radius: 4px; background: white; font-family: var(--body); font-weight: 500; font-size: 11px; resize: none; outline: none; line-height: 1.5; focus: border-color: var(--green);">I stay with my group so we can have fun together. When I hear my teacher's voice, I stop and look.</textarea>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 4px;">
+              <label style="font-family: var(--mono); font-size: 8px; font-weight: bold; color: var(--green); text-transform: uppercase;">3. Active Story Panel</label>
+              <select id="select-story" style="width: 100%; padding: 8px; border: 1px solid var(--line); border-radius: 4px; background: white; font-family: var(--body); font-size: 11px; min-height: 36px; outline: none; focus: border-color: var(--green);">
+                <option value="s1" selected>Stay Close Group (s1)</option>
+                <option value="s2">Escape sensory Mand (s2)</option>
+                <option value="s3">Safe Curb Walking (s3)</option>
+                <option value="s4">Emergency Contact lost (s4)</option>
+                <option value="s5">Regulation Urge Control (s5)</option>
+                <option value="s6">Water Boundaries Pool (s6)</option>
+              </select>
+            </div>
+          </div>
+
+          <button class="btn-primary" onclick="window.print()" style="width: 100%;">
+            🖨️ Print Social Story Card
+          </button>
+        </aside>
+
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { wireElasticHover, triggerStaggeredReveal } from './assets/js/springs.js';
+
+    // Active state and event binding
+    document.addEventListener('DOMContentLoaded', () => {
+      // Staggered load reveal animation
+      triggerStaggeredReveal('.reveal-element');
+
+      // Wire elastic spring hovers on visual card buttons (Fitts' Law)
+      wireElasticHover('.aac-card');
+      wireElasticHover('.btn-primary');
+
+      // Interactive Editor binding
+      const inputTitle = document.getElementById('input-title');
+      const inputNarrative = document.getElementById('input-narrative');
+      const selectStory = document.getElementById('select-story');
+      
+      const deckTitle = document.getElementById('deck-title');
+      const narrativeDisplay = document.getElementById('narrative-display');
+      const deckLabel = document.getElementById('deck-label');
+      const storyEmoji = document.getElementById('story-emoji');
+      const panelIndex = document.getElementById('panel-index');
+      const totalPanels = document.getElementById('total-panels');
+      const coordinatesStamp = document.getElementById('coordinates-stamp');
+
+      // Map story presets
+      const STORIES_MAP = {
+        s1: { title: "Staying With My Group", code: "ST-01 // PROXIMITY", emoji: "👥", panels: "08", idx: "01", coords: "42.10 // -71.02" },
+        s2: { title: "When I Want To Go Somewhere", code: "ST-02 // ESCAPE", emoji: "🛑", panels: "09", idx: "01", coords: "42.36 // -71.06" },
+        s3: { title: "Safe Walking with My Grown-Up", code: "ST-03 // TRANSIT", emoji: "🤝", panels: "08", idx: "01", coords: "42.44 // -71.22" },
+        s4: { title: "What If I Get Lost?", code: "ST-04 // EMERGENCY", emoji: "🔍", panels: "10", idx: "01", coords: "42.10 // -71.02" },
+        s5: { title: "I'm Learning To Stay Close", code: "ST-05 // REGULATION", emoji: "🧠", panels: "08", idx: "01", coords: "42.20 // -71.12" },
+        s6: { title: "Water Safety & Pool Boundaries", code: "ST-06 // WATER", emoji: "🏊", panels: "08", idx: "01", coords: "42.28 // -71.18" }
+      };
+
+      inputTitle.addEventListener('input', (e) => {
+        deckTitle.textContent = e.target.value;
+      });
+
+      inputNarrative.addEventListener('input', (e) => {
+        narrativeDisplay.innerHTML = `&ldquo;${e.target.value}&rdquo;`;
+      });
+
+      selectStory.addEventListener('change', (e) => {
+        const selected = STORIES_MAP[e.target.value];
+        if (selected) {
+          inputTitle.value = selected.title;
+          deckTitle.textContent = selected.title;
+          
+          deckLabel.textContent = selected.code;
+          storyEmoji.textContent = selected.emoji;
+          panelIndex.textContent = selected.idx;
+          totalPanels.textContent = selected.panels;
+          coordinatesStamp.textContent = `COORDINATES: [${selected.coords}]`;
+
+          // Custom narratives trigger
+          if (e.target.value === 's6') {
+            inputNarrative.value = "When I see the water, I stop. I wait for my grown-up to say, 'Let's swim.' I put on my life jacket first.";
+          } else if (e.target.value === 's2') {
+            inputNarrative.value = "Sometimes a place feels too loud or too busy. I can point to my 'I Want Space' card to ask for a break.";
+          } else {
+            inputNarrative.value = `This is customized clinical storyboard ${selected.code}. Approved by PhD behavior specialists.`;
+          }
+          narrativeDisplay.innerHTML = `&ldquo;${inputNarrative.value}&rdquo;`;
+          
+          // Micro-transition on emoji change
+          anime({
+            targets: '#story-emoji',
+            scale: [0.6, 1],
+            rotate: '1turn',
+            duration: 500,
+            easing: 'easeOutElastic(1.1, 0.72)'
+          });
+        }
+      });
+
+    });
+  </script>
+</body>
+</html>

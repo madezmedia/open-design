@@ -44,6 +44,7 @@ const residualSkippedDirectories = new Set([
   ".tmp",
   ".vite",
   "dist",
+  "gsd-dashboard",
   "node_modules",
   "out",
 ]);
@@ -101,6 +102,10 @@ const residualAllowedPathPrefixes = [
   "design-templates/last30days/scripts/lib/vendor/",
   // Vendored upstream html-ppt runtime assets (lewislulu/html-ppt-skill, design template).
   "design-templates/html-ppt/assets/",
+  // Upstream clinical-storyboard runtime animations (design template).
+  "design-templates/clinical-storyboard/assets/",
+  // Upstream custom/onboarding script files for local skills.
+  "skills/",
   "test-results/",
   "vendor/",
 ];
@@ -390,6 +395,7 @@ const toolsRootAllowlist = new Map<string, "directory" | "file">([
   ["dev", "directory"],
   ["pack", "directory"],
   ["pr", "directory"],
+  ["design-agency", "directory"],
 ]);
 
 async function checkToolsLayout(): Promise<boolean> {
