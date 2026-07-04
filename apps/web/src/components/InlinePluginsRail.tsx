@@ -73,13 +73,11 @@ export function InlinePluginsRail(props: Props) {
       locale,
     });
     setPendingId(null);
-    if (!result) {
-      setError(
-        `Failed to apply ${record.title}. Make sure the daemon is reachable.`,
-      );
+    if (!result.ok) {
+      setError(`Failed to apply ${record.title}: ${result.error.code} — ${result.error.message}`);
       return;
     }
-    props.onApplied(record, result);
+    props.onApplied(record, result.data);
   };
 
   if (plugins.length === 0) {

@@ -355,10 +355,13 @@ export function HomeView({
     inputs: Record<string, unknown>,
   ): Promise<ApplyResult | null> {
     setPendingApplyId(record.id);
-    const result = await applyPlugin(record.id, { locale, inputs });
+    const pluginResult = await applyPlugin(record.id, { locale, inputs });
     setPendingApplyId(null);
     setPendingChipId(null);
-    return result;
+    if (!pluginResult.ok) {
+      return null;
+    }
+    return pluginResult.data;
   }
 
   function requestActivePlugin(

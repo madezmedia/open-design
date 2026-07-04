@@ -88,16 +88,17 @@ export function PluginLoopHome({ onSubmit }: Props) {
     setError(null);
     const result = await applyPlugin(record.id, { locale });
     setPendingApplyId(null);
-    if (!result) {
-      setError(`Failed to apply ${record.title}. Make sure the daemon is reachable.`);
+    if (!result.ok) {
+      setError(`Failed to apply ${record.title}: ${result.error.code} — ${result.error.message}`);
       return;
     }
+    const applied = result.data;
     const inputs: Record<string, unknown> = {};
-    for (const field of result.inputs ?? []) {
+    for (const field of applied.inputs ?? []) {
       if (field.default !== undefined) inputs[field.name] = field.default;
     }
-    setActive({ record, result, inputs });
-    const query = result.query || resolvePluginQueryFallback(record.manifest?.od?.useCase?.query, locale);
+    setActive({ record, result: applied, inputs });
+    const query = applied.query || resolvePluginQueryFallback(record.manifest?.od?.useCase?.query, locale);
     if (query) {
       setPrompt(renderPluginBriefTemplate(query, inputs));
     }

@@ -887,6 +887,17 @@ async function readPluginMarketplaceOutcome(
   };
 }
 
+export type ApplyPluginError = {
+  code: string;
+  message: string;
+  status?: number;
+  field?: string;
+};
+
+export type ApplyPluginResult =
+  | { ok: true; data: ApplyResult }
+  | { ok: false; error: ApplyPluginError };
+
 export async function applyPlugin(
   pluginId: string,
   options: {
@@ -895,7 +906,7 @@ export async function applyPlugin(
     grantCaps?: string[];
     locale?: string;
   } = {},
-): Promise<ApplyResult | null> {
+): Promise<ApplyPluginResult> {
   try {
     const resp = await fetch(
       `/api/plugins/${encodeURIComponent(pluginId)}/apply`,
@@ -910,11 +921,24 @@ export async function applyPlugin(
         }),
       },
     );
-    if (!resp.ok) return null;
+    if (!resp.ok) {
+      let code = 'UNKNOWN';
+      let message = `HTTP ${resp.status}`;
+      let field: string | undefined;
+      try {
+        const body = await resp.json();
+        if (body?.error) {
+          code = body.error.code ?? code;
+          message = body.error.message ?? message;
+          field = body.error.field;
+        }
+      } catch {}
+      return { ok: false, error: { code, message, status: resp.status, field } };
+    }
     const json = (await resp.json()) as ApplyResult & { ok?: boolean };
-    return json;
-  } catch {
-    return null;
+    return { ok: true, data: json };
+  } catch (err) {
+    return { ok: false, error: { code: 'NETWORK', message: (err as Error).message } };
   }
 }
 

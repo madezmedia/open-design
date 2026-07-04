@@ -145,9 +145,9 @@ export const PluginsSection = forwardRef<PluginsSectionHandle, Props>(
             ...(props.projectId ? { projectId: props.projectId } : {}),
             locale,
           });
-          if (!result) return null;
-          handleApplied(record, result);
-          return result;
+          if (!result.ok) return null;
+          handleApplied(record, result.data);
+          return result.data;
         },
         clear,
         getActiveRecord: () => activeRecord,
