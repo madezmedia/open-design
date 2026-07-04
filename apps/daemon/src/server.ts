@@ -9559,6 +9559,23 @@ export async function startServer({
   });
 
   app.post('/api/runs', async (req, res) => {
+    if (req.query?.dryRun === '1') {
+      const issues: Array<{ code: string; field?: string; message: string }> = [];
+      if (!req.body?.pluginId && !req.body?.appliedPluginSnapshotId) {
+        issues.push({ code: 'MISSING_FIELD', field: 'pluginId', message: 'pluginId or appliedPluginSnapshotId is required' });
+      }
+      if (typeof req.body?.message !== 'string' || !req.body.message.trim()) {
+        issues.push({ code: 'BAD_REQUEST', field: 'message', message: 'message required' });
+      }
+      if (req.body?.agentId) {
+        const def = getAgentDef(req.body.agentId);
+        if (!def) issues.push({ code: 'UNKNOWN_AGENT', field: 'agentId', message: `unknown agent: ${req.body.agentId}` });
+      }
+      if (issues.length) {
+        return res.status(400).json({ ok: false, dryRun: true, valid: false, issues });
+      }
+      return res.status(200).json({ ok: true, dryRun: true, valid: true, wouldRun: { pluginId: req.body.pluginId, message: req.body.message, agentId: req.body.agentId } });
+    }
     if (daemonShuttingDown) {
       return sendApiError(res, 503, 'UPSTREAM_UNAVAILABLE', 'daemon is shutting down');
     }

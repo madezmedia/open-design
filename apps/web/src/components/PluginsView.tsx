@@ -24,6 +24,7 @@ import {
   uploadPluginFolder,
   uploadPluginZip,
 } from '../state/projects';
+import type { ApplyPluginResult } from '../state/projects';
 import { Icon } from './Icon';
 import { PluginDetailsModal } from './PluginDetailsModal';
 import { PluginsHomeSection } from './PluginsHomeSection';
@@ -183,14 +184,14 @@ export function PluginsView({
     setNotice(null);
     const result = await applyPlugin(record.id, { locale });
     setPendingApplyId(null);
-    if (!result) {
+    if (!result.ok) {
       setNotice({
         ok: false,
-        message: `Failed to apply ${record.title}. Make sure the daemon is reachable.`,
+        message: `Failed to apply ${record.title}: ${result.error.code} — ${result.error.message}`,
       });
       return;
     }
-    setActivePlugin({ record, result });
+    setActivePlugin({ record, result: result.data });
     setDetailsRecord(null);
     setNotice({
       ok: true,

@@ -84,11 +84,11 @@ export function PluginDetailView(props: Props) {
     setError(null);
     const result = await applyPlugin(plugin.id, { locale });
     setApplying(false);
-    if (!result) {
-      setError('Apply failed. Make sure the daemon is reachable.');
+    if (!result.ok) {
+      setError(`Apply failed: ${result.error.code} — ${result.error.message}`);
       return;
     }
-    setApplied(result);
+    setApplied(result.data);
     // Navigate to Home so the PluginLoopHome surface picks up the
     // applied snapshot. Inside an existing project, the ChatComposer
     // mount of PluginsSection consumes the same ApplyResult.
