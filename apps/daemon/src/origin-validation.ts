@@ -13,8 +13,7 @@ export interface RequestWithOriginHeaders {
 
 export function configuredAllowedOrigins(env: NodeJS.ProcessEnv = process.env): string[] {
   const raw = env.OD_ALLOWED_ORIGINS || '';
-  if (!raw.trim()) return [];
-  return raw
+  const list = raw
     .split(',')
     .map((origin) => origin.trim())
     .filter(Boolean)
@@ -25,6 +24,17 @@ export function configuredAllowedOrigins(env: NodeJS.ProcessEnv = process.env): 
       }
       return parsed.origin;
     });
+
+  if (env.NODE_ENV !== 'production' && list.length === 0) {
+    return [
+      'http://localhost:3000',
+      'http://localhost:3001',
+      'http://127.0.0.1:3000',
+      'http://127.0.0.1:3001',
+    ];
+  }
+
+  return list;
 }
 
 export function configuredAllowedHosts(origins = configuredAllowedOrigins()): string[] {

@@ -44,7 +44,7 @@ export function useProjectDetail(projectId: string): ProjectDetailState {
             : null;
         setResolvedDir(reported ?? fallback);
       } catch (err) {
-        if (signal?.aborted) return;
+        if (signal?.aborted || (err instanceof Error && err.name === 'AbortError')) return;
         setError(err instanceof Error ? err : new Error(String(err)));
       } finally {
         if (!signal?.aborted) setLoading(false);
@@ -54,9 +54,11 @@ export function useProjectDetail(projectId: string): ProjectDetailState {
   );
 
   useEffect(() => {
-    const controller = new AbortController();
-    void fetchOnce(controller.signal);
-    return () => controller.abort();
+    let isCancelled = false;
+    void fetchOnce().catch(() => {});
+    return () => {
+      isCancelled = true;
+    };
   }, [fetchOnce]);
 
   const refresh = useCallback(() => fetchOnce(), [fetchOnce]);

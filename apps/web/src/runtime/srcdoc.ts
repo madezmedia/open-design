@@ -468,12 +468,31 @@ function injectSandboxShim(doc: string): string {
     return api;
   }
   function tryShim(name){
-    var works = false;
-    try { works = !!window[name] && typeof window[name].getItem === 'function'; void window[name].length; }
-    catch (_) { works = false; }
-    if (works) return;
-    try { Object.defineProperty(window, name, { configurable: true, value: makeStore() }); }
-    catch (_) { try { window[name] = makeStore(); } catch (__) {} }
+    try {
+      var store = window[name];
+      if (store && typeof store.getItem === 'function') {
+        store.getItem('__test__');
+        return;
+      }
+    } catch (_) {}
+    var fake = makeStore();
+    try {
+      Object.defineProperty(window, name, {
+        configurable: true,
+        enumerable: true,
+        get: function() { return fake; },
+        set: function() {}
+      });
+    } catch (_) {
+      try {
+        Object.defineProperty(Object.getPrototypeOf(window), name, {
+          configurable: true,
+          enumerable: true,
+          get: function() { return fake; },
+          set: function() {}
+        });
+      } catch (__) {}
+    }
   }
   tryShim('localStorage');
   tryShim('sessionStorage');

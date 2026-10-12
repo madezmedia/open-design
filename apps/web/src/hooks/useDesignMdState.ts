@@ -134,7 +134,7 @@ export function useDesignMdState(projectId: string, refreshKey: number = 0): Des
           error: null,
         });
       } catch (err) {
-        if (signal?.aborted) return;
+        if (signal?.aborted || (err instanceof Error && err.name === 'AbortError')) return;
         setState((prev) => ({
           ...prev,
           loading: false,
@@ -150,9 +150,15 @@ export function useDesignMdState(projectId: string, refreshKey: number = 0): Des
   );
 
   useEffect(() => {
+    let isCancelled = false;
     const controller = new AbortController();
-    void compute(controller.signal);
-    return () => controller.abort();
+    void compute(controller.signal).catch((err) => {
+      if (err?.name === 'AbortError' || isCancelled) return;
+    });
+    return () => {
+      isCancelled = true;
+      controller.abort();
+    };
   }, [compute]);
 
   const refresh = useCallback(() => compute(), [compute]);

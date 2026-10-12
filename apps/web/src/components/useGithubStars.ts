@@ -70,16 +70,15 @@ export function useGithubStars(): number | null {
       setCount(cached.count);
       return;
     }
-    const ctrl = new AbortController();
+    let isCancelled = false;
     (async () => {
       try {
         const res = await fetch(API, {
           headers: { Accept: 'application/vnd.github+json' },
-          signal: ctrl.signal,
         });
-        if (!res.ok) return;
+        if (isCancelled || !res.ok) return;
         const data = (await res.json()) as { stargazers_count?: unknown };
-        if (typeof data.stargazers_count !== 'number') return;
+        if (isCancelled || typeof data.stargazers_count !== 'number') return;
         const next: CachedStars = {
           count: data.stargazers_count,
           ts: Date.now(),
@@ -88,11 +87,12 @@ export function useGithubStars(): number | null {
         writePersistedCache(next);
         setCount(next.count);
       } catch {
-        // Network failures and rate-limit 403s both land here. The
-        // caller keeps rendering its previous (or fallback) count.
+        // Network failures and rate-limit 403s land here.
       }
-    })();
-    return () => ctrl.abort();
+    })().catch(() => {});
+    return () => {
+      isCancelled = true;
+    };
   }, []);
 
   return count;

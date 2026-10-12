@@ -80,9 +80,10 @@
       {
         "name": "subject",
         "type": "string",
-        "required": true,
+        "required": false,
         "label": "Subject",
-        "placeholder": "A neon-lit dashboard with floating glass cards"
+        "placeholder": "A neon-lit dashboard with floating glass cards",
+        "default": "A neon-lit dashboard with floating glass cards"
       },
       {
         "name": "style",

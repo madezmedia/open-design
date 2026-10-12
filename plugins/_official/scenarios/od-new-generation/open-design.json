@@ -79,9 +79,10 @@
       {
         "name": "artifactKind",
         "type": "string",
-        "required": true,
+        "required": false,
         "label": "Artifact kind",
         "placeholder": "landing page",
+        "default": "landing page",
         "options": [
           "landing page",
           "investor deck",
@@ -93,16 +94,18 @@
       {
         "name": "audience",
         "type": "string",
-        "required": true,
+        "required": false,
         "label": "Audience",
-        "placeholder": "VC partners at a Series A SaaS round"
+        "placeholder": "VC partners at a Series A SaaS round",
+        "default": "VC partners at a Series A SaaS round"
       },
       {
         "name": "topic",
         "type": "string",
-        "required": true,
+        "required": false,
         "label": "Topic",
-        "placeholder": "shipping faster product pipelines"
+        "placeholder": "shipping faster product pipelines",
+        "default": "shipping faster product pipelines"
       }
     ]
   }

@@ -910,7 +910,11 @@ export async function applyPlugin(
         }),
       },
     );
-    if (!resp.ok) return null;
+    if (!resp.ok) {
+      const errBody = await resp.text().catch(() => '');
+      console.warn('[applyPlugin] daemon error:', resp.status, errBody);
+      return null;
+    }
     const json = (await resp.json()) as ApplyResult & { ok?: boolean };
     return json;
   } catch {

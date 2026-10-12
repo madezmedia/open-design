@@ -25,11 +25,11 @@
   },
   "devDependencies": {
     "@madezmedia/acmi": "^1.2.0",
-    "@upstash/redis": "^1.30.0",
     "@open-design/tools-dev": "workspace:*",
     "@open-design/tools-pack": "workspace:*",
     "@open-design/tools-pr": "workspace:*",
     "@types/node": "^20.17.10",
+    "@upstash/redis": "^1.30.0",
     "tsx": "4.21.0",
     "typescript": "^5.6.3"
   },
@@ -43,5 +43,10 @@
       "electron",
       "esbuild"
     ]
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.9.0",
+    "pg": "^8.21.0",
+    "ws": "^8.21.0"
   }
 }

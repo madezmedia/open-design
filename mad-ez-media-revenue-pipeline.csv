@@ -1,0 +1,3 @@
+Prospect Name,Category,Website URL,Is WordPress?,WordPress Score,Tier,Contact Name,Phone,Email,Outreach Status,Outreach Date,Follow-up Date,Notes,Assigned To
+"Example Dental Practice","Dental","https://example-dental.com","YES",100,HOT,"Dr. Smith","(555) 123-4567","dr.smith@example-dental.com","New",,,"","Duane"
+"Example Holistic Center","Holistic","https://example-holistic.com","NO",0,COLD,"Jane Doe","(555) 987-6543","jane@example-holistic.com","New",,,"","System"

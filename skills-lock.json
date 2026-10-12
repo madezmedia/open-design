@@ -1,0 +1,449 @@
+{
+  "version": 1,
+  "skills": {
+    "brandkit": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/brandkit/SKILL.md",
+      "computedHash": "b63012f3c3d21197e0185d3e9cc7ec40c589fb10e0b5a32a561739de31aa3f20"
+    },
+    "design-taste-frontend": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/taste-skill/SKILL.md",
+      "computedHash": "6d838b246d0e35d0b53f4f23f98ba7a1dd561937e64f7d0c7553b0928e376c3e"
+    },
+    "design-taste-frontend-v1": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/taste-skill-v1/SKILL.md",
+      "computedHash": "338a6f574f10fcdd6df0f1eae029c49ce075c7770c4217fcfe38ca9cf684bc7c"
+    },
+    "full-output-enforcement": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/output-skill/SKILL.md",
+      "computedHash": "26bd29ce4c5e02c7666b2d503609bf466bd32290822e91f0e984147048dbb924"
+    },
+    "gpt-taste": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/gpt-tasteskill/SKILL.md",
+      "computedHash": "cc8f0c601d8240a124e1d11634351a2be7b8a72fd807c75e5b6bf7afcd5ddee0"
+    },
+    "high-end-visual-design": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/soft-skill/SKILL.md",
+      "computedHash": "7db385e4c5370e5a7fca9704a1361b056e4504ea6a03924bb86f33a4f00b5c73"
+    },
+    "image-to-code": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/image-to-code-skill/SKILL.md",
+      "computedHash": "58517b03b2a01f4c9ba65861559d03df931400871bbc200978c975b24bb92c73"
+    },
+    "imagegen-frontend-mobile": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/imagegen-frontend-mobile/SKILL.md",
+      "computedHash": "9ab7f4f6ce66a3cff02bbf5894e5bd5af50bf5d6ef0adffdc88e8fab772fe44f"
+    },
+    "imagegen-frontend-web": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/imagegen-frontend-web/SKILL.md",
+      "computedHash": "65f5ae59fa317567809438310b1c54f78cd133426deb43e4d3d4ca4c8f541628"
+    },
+    "industrial-brutalist-ui": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/brutalist-skill/SKILL.md",
+      "computedHash": "8fc355c4aadb7d29c53ca28bc41be3cd6eea765d121e3737c4dc2d0f90a8effa"
+    },
+    "minimalist-ui": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/minimalist-skill/SKILL.md",
+      "computedHash": "08873a3131d3be27bef9bf3304b310b16b44ca6e3561aebe532797be3443f6bd"
+    },
+    "muapi-3d-logo-animation": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/motion/3d-logo-animation/SKILL.md",
+      "computedHash": "4b30ecfdb62145b06e34a3a65827473ed4173a10a9acdff67d8e93f0fcfe31c5"
+    },
+    "muapi-action-figure-generator": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/action-figure-generator/SKILL.md",
+      "computedHash": "e8eeb404bea386f6158324b9030339c279e3c80863ce93a4d008be6e54814bc6"
+    },
+    "muapi-ad-creative": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/ad-creative/SKILL.md",
+      "computedHash": "ac41e09be27a5b04bba4989564c6b3158337d70d97a613b4f2215e7988819137"
+    },
+    "muapi-ai-clipping": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/edit/ai-clipping/SKILL.md",
+      "computedHash": "84a8c3256cf265ff33b7c3cc07b1c7fe0944d46e5bcec2c62db4ee67981e6840"
+    },
+    "muapi-ai-fight-scene": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/motion/ai-fight-scene/SKILL.md",
+      "computedHash": "98abbaaa79d906271eab13aba3b2307782830c2fa3520bc6a40ec66f2fb495e6"
+    },
+    "muapi-amazon-product-listing": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/amazon-product-listing/SKILL.md",
+      "computedHash": "594ee633d7982cc7916e88a978ac0f7dba44922fceb5791e69efb008fa8bd16c"
+    },
+    "muapi-animal-video-generator": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/motion/animal-video-generator/SKILL.md",
+      "computedHash": "8e614282a52e375d6e68d9e0f2552f93158ea8e55743a63d4de73d109045a284"
+    },
+    "muapi-award-ceremony-video": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/motion/award-ceremony-video/SKILL.md",
+      "computedHash": "ba38a3a0772ca8620c6bb3e9cfc168e1ab420e8fc290cec5f4e0c705a8ddcac8"
+    },
+    "muapi-blog-header": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/blog-header/SKILL.md",
+      "computedHash": "bf3a2a0c0ec1de1d4cb194979b57f1653695c99131e7eaae672fa307fafd4625"
+    },
+    "muapi-brand-kit": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/brand-kit/SKILL.md",
+      "computedHash": "cc4c15e05491c2fcc88566c0767c0bc48599d4ebf23d05a8aac73f638d4ab893"
+    },
+    "muapi-brochures": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/brochures/SKILL.md",
+      "computedHash": "1618f2ce2529332f808fe18b1d605d46d57737a615e8ef332dd08467772165c4"
+    },
+    "muapi-cartoon-dance-animation": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/motion/cartoon-dance-animation/SKILL.md",
+      "computedHash": "9ad66c4327562d363a22f9c77a7ba513346b9eeff6220535445ac789a97fe4b1"
+    },
+    "muapi-character-story-video": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/motion/character-story-video/SKILL.md",
+      "computedHash": "79f79de0a57fd52c9a55dd7c0c94ae5ece10e43476f6887a300733f8fdeb6fed"
+    },
+    "muapi-chibi-collage-effect": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/chibi-collage-effect/SKILL.md",
+      "computedHash": "2e03c8683481b6277e2204d9e1b76cd768e82c12f50124a824a95920e6a88712"
+    },
+    "muapi-cinema-director": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/motion/cinema-director/SKILL.md",
+      "computedHash": "113f387a02b50f4f78c8643ab3d18a3e631879e9ff7e4bfb544851e2f9665131"
+    },
+    "muapi-color-analysis-board": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/color-analysis-board/SKILL.md",
+      "computedHash": "dd4becd3c18c29a06ca1323e4b573b49984084e305cbfe1e04ed1df1c2d2f3de"
+    },
+    "muapi-couple-grid-creator": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/couple-grid-creator/SKILL.md",
+      "computedHash": "745e65c0997516d7940e364eff89bdec0e37351294b9353151c52c0a24200168"
+    },
+    "muapi-design-guide": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/design-guide/SKILL.md",
+      "computedHash": "d7e860e46cb5ed7ffda04cc30ce1f81c99d41fd26164bfe430f6db3766974f60"
+    },
+    "muapi-drone-style-video": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/motion/drone-style-video/SKILL.md",
+      "computedHash": "f52060b6d96d25037bc823c60ece252f037e2348b04f6c3c657b87217e34cd63"
+    },
+    "muapi-fashion-try-on": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/fashion-try-on/SKILL.md",
+      "computedHash": "1ac907b23f7ae4a3decd6f01a1b374ec6b523620dc4fd84618f0819ed9f87957"
+    },
+    "muapi-floor-plan-rendering": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/floor-plan-rendering/SKILL.md",
+      "computedHash": "7c47dea65e596f310c1ab668037a32a3face36af4315013521f31e122982f224"
+    },
+    "muapi-freeze-effect-video": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/motion/freeze-effect-video/SKILL.md",
+      "computedHash": "c074ed387a1cebf06826846e941602d0e059507c7e855a0a2239ba5a4968fc9f"
+    },
+    "muapi-giant-product-showcase": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/motion/giant-product-showcase/SKILL.md",
+      "computedHash": "4398571551acb357b264ec6913c9a66c030e783b9e21a0f84b69ef5f9251592d"
+    },
+    "muapi-instagram-post": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/social/instagram-post/SKILL.md",
+      "computedHash": "1706bc1617591ee711494f8f18a0d0993934ffaa1ec7c3300a9576e19ade88f9"
+    },
+    "muapi-interior-design": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/interior-design/SKILL.md",
+      "computedHash": "161ed123bb72784f3f17f325d9b5546c6c23a3c3c64102729628b5382cb07fc2"
+    },
+    "muapi-interior-design-visualizer": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/interior-design-visualizer/SKILL.md",
+      "computedHash": "08b05663581035396d5f1e90713bbe828c473e26fbaa00a3a6efa0cdef28aa27"
+    },
+    "muapi-jewelry-product-video": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/motion/jewelry-product-video/SKILL.md",
+      "computedHash": "2c503c005b801c10ca247b5dad3056018bb844fa0af2c4f3f5ea5d8234a41cb6"
+    },
+    "muapi-keyboard-art-maker": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/keyboard-art-maker/SKILL.md",
+      "computedHash": "08958e9b01b1a86150418509d3d831b300047685094e792a88235aa308926a67"
+    },
+    "muapi-logo-branding": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/logo-branding/SKILL.md",
+      "computedHash": "bd3183b4ff3caca278416fcb282c6c4c2838507a7cec99dd4b046ac4bdbb277b"
+    },
+    "muapi-logo-creator": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/logo-creator/SKILL.md",
+      "computedHash": "bbbaea5d9a1059ce53a7697065ec9a1e75eddb2bc50756f7f02713948cacb70d"
+    },
+    "muapi-logo-generator": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/logo-generator/SKILL.md",
+      "computedHash": "7b52e7a843a0f52dbdcfbfda6cb4cf9ffe5b63dfa5974727387ca45adf976a63"
+    },
+    "muapi-media-editing": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "core/edit/SKILL.md",
+      "computedHash": "99d5bb4515f3f99bf38c524ea0217f0ddab3b134b3e53c7c59011d91fe031d9c"
+    },
+    "muapi-media-generation": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "core/media/SKILL.md",
+      "computedHash": "8c77125896a2ab80c9ebb485513dc9b27022826ef6032dc10e4b441c938d7d16"
+    },
+    "muapi-multi-angle-reshoot": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/multi-angle-reshoot/SKILL.md",
+      "computedHash": "7a2329c35ad3ce35fc30ff0125c976d77abd6c2af0a128c78f70d21ecf75b77c"
+    },
+    "muapi-multi-angle-shots": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/multi-angle-shots/SKILL.md",
+      "computedHash": "b1b8827833f5370a8cfe047ad189df993162e90a492bd43c0aa73b4ea0fa88a9"
+    },
+    "muapi-music-video": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/motion/music-video/SKILL.md",
+      "computedHash": "eb7888700d3075b30812259496f2d36043433c6d75215096c0a1ff1c3e8de97a"
+    },
+    "muapi-nano-banana": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/nano-banana/SKILL.md",
+      "computedHash": "0ee3310e6608011aa65177808f7000e9a401a3854f5fc79fcc8030e1cc80e10d"
+    },
+    "muapi-one-shot-video": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/motion/one-shot-video/SKILL.md",
+      "computedHash": "653a1d9524cb3fa9709ce3807c8caf0590901401dcf8438a71614026becdbab1"
+    },
+    "muapi-photo-pack-generator": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/photo-pack-generator/SKILL.md",
+      "computedHash": "5f7bb7466580ab37879cef848c7454c947d62484ac552e755d7490ee01953dd3"
+    },
+    "muapi-platform": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "core/platform/SKILL.md",
+      "computedHash": "e9802ab09a2b4d4d2a8daa465467f2290fcefee7e8ed22a95e13ddba0566365c"
+    },
+    "muapi-product-ad-cinematic": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/motion/product-ad-cinematic/SKILL.md",
+      "computedHash": "bd13ad27b4ceccdad07fc1ac331d597be28471ac46c8d99cbaf84aa5aaa5e485"
+    },
+    "muapi-product-campaign": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/social/product-campaign/SKILL.md",
+      "computedHash": "3030bafcb17cd5bf80a8d1227086e4d4636b8bb3d034aa0168b85465e681dae7"
+    },
+    "muapi-product-showcase-video": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/motion/product-showcase-video/SKILL.md",
+      "computedHash": "d91dafa0877309043dd05bdd32f9ca3bdfd9e390a1ecc07bd77964e7caa46190"
+    },
+    "muapi-product-video-ad-maker": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/motion/product-video-ad-maker/SKILL.md",
+      "computedHash": "1e13ffaff81ec1b835ee869f5d2eb780ede64f9c3dffd099446234ac80acafb2"
+    },
+    "muapi-rednote-cover": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/social/rednote-cover/SKILL.md",
+      "computedHash": "d0a85b7ed0b1cc73ff50c14017656ddf05c127efcd0fd129dfd8751d97d977c8"
+    },
+    "muapi-seedance-2": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/motion/seedance-2/SKILL.md",
+      "computedHash": "51d8de9cb5021359ab55b0d9291367ae1aa8e02b20489150c38ea3eb31308abb"
+    },
+    "muapi-selfie-with-celebrities": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/selfie-with-celebrities/SKILL.md",
+      "computedHash": "ccef73be64f58c6da61670da2b4a61c4c8fd015e06fc9565e206b389e305aa9f"
+    },
+    "muapi-social-media-video": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/social/social-media-video/SKILL.md",
+      "computedHash": "4de91222e0a204fde26e06438868df2d1914c5eaea4d0734c7382d1106dcdfb9"
+    },
+    "muapi-social-pack": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/social/social-pack/SKILL.md",
+      "computedHash": "9cf7c56ccc90a90f8fe3642bb0246db23037cbdbcc28f15d0e961f5cb7ecb4e4"
+    },
+    "muapi-storyboard": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/storyboard/SKILL.md",
+      "computedHash": "b32a3ce03327078618b1fc7c85a95860e61bfe4da7793b461545b3edca9ad6e5"
+    },
+    "muapi-storyboard-to-cooking-video": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/motion/storyboard-to-cooking-video/SKILL.md",
+      "computedHash": "6698ea81bf0b858165b1a3b17c8b681184a8bda884ebfbcb2451b2b651f2c75f"
+    },
+    "muapi-talking-baby-video": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/motion/talking-baby-video/SKILL.md",
+      "computedHash": "77352cbe2f981e883056f64429c22910568240ba1492c528e3176ec082367215"
+    },
+    "muapi-ugc-ads-workflow": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/social/ugc-ads-workflow/SKILL.md",
+      "computedHash": "62faf1aa5f621f198ab2f3db2b491f8419017cd863f69da4eb69c69892c5e0e9"
+    },
+    "muapi-ugc-lifestyle-try-on": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/motion/ugc-lifestyle-try-on/SKILL.md",
+      "computedHash": "a6d650c99f76ddadf2d801a54602f75d97a24a761f5475642cee2ca79330592c"
+    },
+    "muapi-ugc-video-factory": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/motion/ugc-video-factory/SKILL.md",
+      "computedHash": "14d6ea04d11061f9dfbf9baa8e0ea3db6d1603a4c8dc0f43d78714f1ab054ee5"
+    },
+    "muapi-ui-design": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/ui-design/SKILL.md",
+      "computedHash": "e3afdb50c06e8101dad020aedf28d097a254b84be825738e1994b894bbad97b2"
+    },
+    "muapi-url-to-design": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/url-to-design/SKILL.md",
+      "computedHash": "32aa1eaac53a77f90f1c40ada03bc3ac2ee07cb65fd4d89717f22f60e1872929"
+    },
+    "muapi-workflow": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/workflow/SKILL.md",
+      "computedHash": "f88f270c68f854a530a1763bf6be1f1eccb7031c426cdeb2a5b2bf992eac5c93"
+    },
+    "muapi-youtube-shorts": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/social/youtube-shorts/SKILL.md",
+      "computedHash": "02ee2ec89f18dbd20fca5f795ece27b1508a5c860fa64273e2bcf5246f0f4355"
+    },
+    "muapi-youtube-thumbnail": {
+      "source": "SamurAIGPT/Generative-Media-Skills",
+      "sourceType": "github",
+      "skillPath": "library/visual/youtube-thumbnail/SKILL.md",
+      "computedHash": "d2b705041ac580e5b5c42a33067b477913510256b62831d1856903fea344859b"
+    },
+    "redesign-existing-projects": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/redesign-skill/SKILL.md",
+      "computedHash": "b405eee0e0e80fc243f731d9aa368bca307e356db7e6157d27101d369dac6726"
+    },
+    "stitch-design-taste": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/stitch-skill/SKILL.md",
+      "computedHash": "3aa58992f0fd9673b975cd48cd4f8ae4b4976fd5cdd9f20e26d3d447aee317fb"
+    },
+    "stop-slop": {
+      "source": "hardikpandya/stop-slop",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "617bf97d33162a6bd0da4f40a97aac589de58e5a6c9cf011ed6108992210e7cb"
+    }
+  }
+}

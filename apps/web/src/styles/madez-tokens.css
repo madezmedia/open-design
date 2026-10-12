@@ -1,0 +1,74 @@
+/* Madez Media Unified Design Tokens — OpenDesign 0.7.0 */
+
+:root {
+  /* Surfaces & Base Backgrounds */
+  --madez-bg-base:          #0B0C10; /* Deep Void Black */
+  --madez-bg-surface:       #12141D; /* Dark Charcoal Surface */
+  --madez-bg-glass:         rgba(18, 20, 29, 0.70); /* Translucent Glass */
+  --madez-border-glass:     rgba(255, 255, 255, 0.08); /* Frosted Border */
+  --madez-blur-glass:       blur(16px) saturate(180%);
+
+  /* Primary Brand & Accent Tokens */
+  --madez-accent-blue:      #1856FF; /* Electric Blue (Primary Interaction Signal) */
+  --madez-accent-blue-glow: rgba(24, 86, 255, 0.35);
+  --madez-accent-cyan:      #00F0FF; /* Cyber Cyan (Fleet Status / Active Nodes) */
+  --madez-parchment:        #F5EBE0; /* Warm Parchment (Editorial Highlights) */
+  --madez-parchment-subtle: #E8D8C8;
+
+  /* Typography Colors */
+  --madez-fg-primary:       #F8FAFC; /* Crisp White Text */
+  --madez-fg-secondary:     #94A3B8; /* Slate Subtext */
+  --madez-fg-muted:         #64748B; /* Muted Caption */
+
+  /* Status Colors */
+  --madez-success:          #07CA6B; /* Active / Shipped */
+  --madez-warning:          #E89558; /* Blocker / Pending */
+  --madez-danger:           #EA2143; /* Error / Down */
+}
+
+/* Glassmorphism Utility Classes */
+.madez-glass-card {
+  background: var(--madez-bg-glass);
+  backdrop-filter: var(--madez-blur-glass);
+  -webkit-backdrop-filter: var(--madez-blur-glass);
+  border: 1px solid var(--madez-border-glass);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.madez-glass-card:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+  transform: translateY(-2px);
+}
+
+.madez-btn-primary {
+  background-color: var(--madez-accent-blue);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px 20px;
+  border: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 15px var(--madez-accent-blue-glow);
+}
+
+.madez-btn-primary:hover {
+  background-color: #336CFF;
+  box-shadow: 0 0 25px var(--madez-accent-blue-glow);
+  transform: translateY(-1px);
+}
+
+.madez-text-parchment {
+  color: var(--madez-parchment);
+}
+
+.madez-badge-cyan {
+  background: rgba(0, 240, 255, 0.10);
+  color: var(--madez-accent-cyan);
+  border: 1px solid rgba(0, 240, 255, 0.30);
+  border-radius: 9999px;
+  padding: 2px 10px;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.75rem;
+}

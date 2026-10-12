@@ -1,0 +1,39 @@
+<h2>“clinical-storyboard” Kit: Deliverable Architecture</h2>
+<p class="subtitle">Select how the Open Design template structures and packages the clinical deliverables (stories, visual cards, guides) for therapists and parents.</p>
+
+<div class="options">
+  <div class="option" data-choice="single-bundle" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Static Single-File Bundle (Ultra-Portable)</h3>
+      <p>Compiles all 6 storyboards, printable visual cards, and the parent generalization guide into a single self-contained <code>index.html</code>. Zero external assets, completely portable, and works instantly offline or on a tablet device.</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="multi-page" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Multi-Spread Folder Hierarchy (Modular & Editable)</h3>
+      <p>Structures a modular, clean folder tree: <code>/decks/01-stay-close/</code>, <code>/decks/02-water-safety/</code>, <code>/guides/parent-workbook/</code>. Each lesson is separate, allowing teachers and parents to edit, compile, and validate cards as focused sub-systems.</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="dynamic-spa" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Dynamic SPA Navigation (Web-App Prototype)</h3>
+      <p>Builds a single-page web app with left-rail navigation tabs, persistent local storage, and dynamic sliding panel indicators. Let's therapists toggle between stories, track progress, and customize child profiles in real-time.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top: 30px; padding: 15px; border: 1px dashed #E5E3D7; border-radius: 4px; background: #FAF9F5; font-family: monospace; font-size: 9px; line-height: 1.5; color: #2C3E50;">
+  <span class="label" style="color: #2D4A3E;">📂 Suggested Template Tree:</span><br/>
+  design-templates/clinical-storyboard/<br/>
+  ├── SKILL.md                 # Open Design skill definition<br/>
+  ├── template.json            # Layout properties & default assets<br/>
+  ├── example.html             # Default interactive demonstration<br/>
+  └── assets/<br/>
+      ├── css/styles.css       # Tactile editorial design tokens<br/>
+      └── js/springs.js        # Anime.js v4 micro-interactions library<br/>
+</div>

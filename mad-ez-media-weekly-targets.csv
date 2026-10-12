@@ -1,0 +1,6 @@
+Metric,Target,Current,Progress %,Notes
+Daily Prospect Target,20,0,0%,"Duane needs 20 warm prospects/day"
+Monthly Client Target,10,0,0%,"10 clients closed per month"
+Monthly Revenue Target ($),5000,0,0%,"$500/mo per client × 10 clients"
+Commission Rate (%),10,0,,"10% commission on closed deals"
+Duane Commission Earned ($),0,0,,"Calculated: Revenue × Commission Rate"
