@@ -8,7 +8,7 @@ from cron_runner import CronRunner
 import urllib.request
 import json
 
-API_KEY = "ak_xHrrW-9SrFPEC1LPv6eJ"
+API_KEY = "<REDACTED-REVOKED-2026-11-18>"
 SQUARE_ACCOUNT_ID = "ca_bOmH13sWOnTK"  # Mad EZ Media Square Connection ID
 
 def revenue_task(dry_run):
